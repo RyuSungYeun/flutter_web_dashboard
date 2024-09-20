@@ -4,8 +4,8 @@ import 'package:flutter_web_dashboard/src/model/comment_model.dart';
 
 class CommentWidget extends StatelessWidget {
   const CommentWidget({
-    Key key,
-    @required Size media,
+    Key? key,
+    required Size media,
   })  : _media = media,
         super(key: key);
 

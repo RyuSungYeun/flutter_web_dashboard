@@ -11,12 +11,12 @@ class Comment {
   String date;
 
   Comment(
-      {this.name,
-      this.comment,
-      this.status,
-      this.image,
-      this.color,
-      this.date});
+      {required this.name,
+      required this.comment,
+      required this.status,
+      required this.image,
+      required this.color,
+      required this.date});
 }
 
 List<Comment> commentList = [

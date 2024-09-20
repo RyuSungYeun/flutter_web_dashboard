@@ -4,12 +4,11 @@ import 'package:flutter_web_dashboard/src/model/project_model.dart';
 
 class ProjectWidget extends StatelessWidget {
   const ProjectWidget({
-    Key key,
-    @required Size media,
-  })  : _media = media,
-        super(key: key);
+    Key? key,
+    required this.media,
+  }) : super(key: key);
 
-  final Size _media;
+  final Size media;
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +17,8 @@ class ProjectWidget extends StatelessWidget {
       shadowColor: Colors.grey,
       borderRadius: BorderRadius.circular(4),
       child: Container(
-        height: _media.height / 1.9,
-        width: _media.width / 3 + 20,
+        height: media.height / 1.9,
+        width: media.width / 3 + 20,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(4),

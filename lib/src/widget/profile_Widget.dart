@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ProfileWidget extends StatelessWidget {
   const ProfileWidget({
-    Key key,
-    @required Size media,
+    Key? key,
+    required Size media,
   })  : _media = media,
         super(key: key);
 
@@ -124,10 +123,12 @@ class ProfileWidget extends StatelessWidget {
                     Container(
                       height: 45,
                       width: 120,
-                      child: RaisedButton(
-                        color: Color(0xff7560ED),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Color(0xff7560ED),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
                         ),
                         onPressed: () => print('follow'),
                         child: Text(
@@ -138,6 +139,20 @@ class ProfileWidget extends StatelessWidget {
                           ),
                         ),
                       ),
+                      // child: RaisedButton(
+                      //   color: Color(0xff7560ED),
+                      //   shape: RoundedRectangleBorder(
+                      //     borderRadius: BorderRadius.circular(20),
+                      //   ),
+                      //   onPressed: () => print('follow'),
+                      //   child: Text(
+                      //     'Follow',
+                      //     style: TextStyle(
+                      //       color: Colors.white,
+                      //       fontSize: 18,
+                      //     ),
+                      //   ),
+                      // ),
                     ),
                     SizedBox(height: 20),
                     Row(

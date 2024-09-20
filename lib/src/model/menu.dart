@@ -4,7 +4,7 @@ class Menu {
   String title;
   IconData icon;
 
-  Menu({this.title, this.icon});
+  Menu({required this.title, required this.icon});
 }
 
 List<Menu> menuItems = [

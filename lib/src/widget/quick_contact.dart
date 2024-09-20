@@ -4,8 +4,8 @@ import 'package:flutter_web_dashboard/src/commons/theme.dart';
 
 class QuickContact extends StatelessWidget {
   const QuickContact({
-    Key key,
-    @required Size media,
+    Key? key,
+    required Size media,
   })  : _media = media,
         super(key: key);
 
@@ -13,7 +13,7 @@ class QuickContact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  final _formKey = GlobalKey<FormState>();
+    final _formKey = GlobalKey<FormState>();
     void _showDialog() {
       showDialog(
         context: context,
@@ -29,8 +29,8 @@ class QuickContact extends StatelessWidget {
             content: Text('Your Message has been sent.'),
             actions: <Widget>[
               // usually buttons at the bottom of the dialog
-               FlatButton(
-                child:  Text('Close'),
+              TextButton(
+                child: Text('Close'),
                 onPressed: () {
                   Navigator.of(context).pop();
                 },

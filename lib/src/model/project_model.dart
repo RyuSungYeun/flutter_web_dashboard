@@ -16,13 +16,13 @@ class Project {
   Color color;
 
   Project(
-      {this.assigned,
-      this.name,
-      this.priority,
-      this.budget,
-      this.image,
-      this.position,
-      this.color});
+      {required this.assigned,
+      required this.name,
+      required this.priority,
+      required this.budget,
+      required this.image,
+      required this.position,
+      required this.color});
 }
 
 List<Project> projectItems = [
@@ -32,6 +32,7 @@ List<Project> projectItems = [
       priority: Priority.Low,
       position: 'Web Designer',
       budget: 3.9,
+      image: 'assets/images/elite_admin.png',
       color: Colors.yellow),
   Project(
     assigned: 'Andrew Elena',
@@ -39,6 +40,7 @@ List<Project> projectItems = [
     priority: Priority.Medium,
     position: 'Project Manager',
     budget: 23.9,
+    image: 'assets/images/real_homes.png',
     color: Colors.lightBlue,
   ),
   Project(
@@ -47,6 +49,7 @@ List<Project> projectItems = [
     priority: Priority.High,
     position: 'Developer',
     budget: 12.9,
+    image: 'assets/images/flutter_web.png',
     color: Colors.red,
   ),
   Project(
@@ -55,6 +58,7 @@ List<Project> projectItems = [
     priority: Priority.Low,
     position: 'Frontend Eng',
     budget: 10.9,
+    image: 'assets/images/elite_admin.png',
     color: Colors.yellow,
   ),
   Project(
@@ -63,6 +67,7 @@ List<Project> projectItems = [
     priority: Priority.High,
     position: 'Content Writer',
     budget: 2.6,
+    image: 'assets/images/helping_hands.png',
     color: Colors.red,
   ),
 ];

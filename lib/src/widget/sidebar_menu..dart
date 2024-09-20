@@ -15,8 +15,8 @@ class _SideBarMenuState extends State<SideBarMenu>
   bool collapsed = false;
   int selectedIndex = 0;
 
-  AnimationController _animationController;
-  Animation<double> _animation;
+  late AnimationController _animationController;
+  late Animation<double> _animation;
 
   @override
   void initState() {
@@ -32,7 +32,7 @@ class _SideBarMenuState extends State<SideBarMenu>
   Widget build(BuildContext context) {
     return AnimatedBuilder(
       animation: _animation,
-      builder: (BuildContext context, Widget child) {
+      builder: (BuildContext context, _) {
         return Container(
           decoration: BoxDecoration(
             boxShadow: [
@@ -41,7 +41,7 @@ class _SideBarMenuState extends State<SideBarMenu>
             color: drawerBgColor,
           ),
           width: _animation.value,
-          child:  Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[

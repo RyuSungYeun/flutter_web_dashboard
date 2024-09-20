@@ -9,12 +9,12 @@ class ChartCardTile extends StatelessWidget {
   final String typeText;
 
   const ChartCardTile(
-      {Key key,
-      this.cardColor,
-      this.cardTitle,
-      this.subText,
-      this.icon,
-      this.typeText})
+      {Key? key,
+      required this.cardColor,
+      required this.cardTitle,
+      required this.subText,
+      required this.icon,
+      required this.typeText})
       : super(key: key);
 
   @override
